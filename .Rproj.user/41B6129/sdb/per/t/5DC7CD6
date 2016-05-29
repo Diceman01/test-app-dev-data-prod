@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyServer(function(input, output) {\n\n    output$age <- renderText({\n        \n        \n        if(input$units == \"days\") {\n            age <- difftime(Sys.Date(), input$dob, \"days\")\n        } else if (input$units == \"months\") {\n            age <- as.POSIXlt(Sys.Date())$mon - as.POSIXlt(input$dob)$mon +\n                12 * (as.POSIXlt(Sys.Date())$year - as.POSIXlt(input$dob)$year)\n        } else { \n            age <- as.POSIXlt(Sys.Date())$year - as.POSIXlt(input$dob)$year\n        }\n        \n        paste(age, input$units)\n        \n    }) \n})\n",
+    "created" : 1464537313131.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1638868744",
+    "id" : "5DC7CD6",
+    "lastKnownWriteTime" : 1464542629,
+    "last_content_update" : 1464542629014,
+    "path" : "~/GitHub/test-app-dev-data-prod/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,9 @@
+{
+    "path" : "~/GitHub/test-app-dev-data-prod",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

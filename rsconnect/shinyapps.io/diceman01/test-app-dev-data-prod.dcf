@@ -1,0 +1,9 @@
+name: test-app-dev-data-prod
+account: diceman01
+server: shinyapps.io
+appId: 105073
+bundleId: 465551
+url: https://diceman01.shinyapps.io/test-app-dev-data-prod/
+when: 1464537492.63916
+asMultiple: FALSE
+asStatic: FALSE
